@@ -1,0 +1,48 @@
+/* Apply a max-width to the form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Apply a grid layout to the form elements */
+form div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* Add vertical padding to the inputs */
+input[type="text"] {
+padding: .375rem .75rem;
+}
+
+/* Add margin to the form labels */
+label {
+margin-bottom: .5rem;
+}
+
+/* Apply mobile-first responsive design using media queries */
+@media screen and (max-width: 600px) {
+  /* Modify the form width and grid layout to fit smaller screens */
+  form {
+      max-width: 350px;
+  }
+
+  form div {
+      display: block;
+  }
+
+  /* Reduce the font size of the labels */
+  label {
+      font-size: 14px;
+  }
+}
+
+/* Add blue boxes to the result values */
+.custom-result-box {
+  border: 2px solid #2296f3;
+  padding: 1rem;
+  color: #2296f3;
+  font-weight: bold;
+  text-align: center;
+}

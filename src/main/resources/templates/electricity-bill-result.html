@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electricity Billing Amount</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2f7ff;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .custom-result-heading {
+            font-weight: 700;
+            font-size: 3rem;
+            margin: 0 0 2rem;
+        }
+        
+        .custom-form-label {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: .5rem;
+        }
+        
+        strong {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Electricity Billing Amount</a>
+    </nav>
+</header>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card p-3 shadow">
+                <h2 class="text-center mb-4 custom-result-heading">Your Electricity Billing Amount</h2>
+                <div class="mb-3">
+                    <p class="custom-form-label mb-0">Total Consumed Units:</p>
+                    <p class="custom-result-box"><strong th:text="${units}"></strong></p>
+                </div>
+                <div>
+                    <p class="custom-form-label mb-0">Total Bill Amount:</p>
+                    <p class="custom-result-box"><strong th:text="${billAmount}"></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 2021 My Company</small>
+        </div>
+
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
